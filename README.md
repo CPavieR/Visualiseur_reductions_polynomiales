@@ -1,4 +1,4 @@
-# Visualiseur reductions polynomiale
+# Visualiseur reductions polynomiales
 Dépendances :
 - mpl_toolkits
 - networkx
