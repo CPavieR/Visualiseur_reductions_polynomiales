@@ -163,15 +163,15 @@ def resolvSAT2(ent):
     """
 
     if (ent == ""):
-        print("le format d'entrée des formules est le LaTeX, exemple : (v \\vee g) \wedge (-q \\vee c) \wedge (h \\vee h) \wedge (y)\wedge(-l \\vee -a)")
-        ent = input("entrez la formule (v \\vee g) \wedge (-q \\vee c)\n")
+        print(r"le format d'entrée des formules est le LaTeX, exemple : (v \\vee g) \wedge (-q \\vee c) \wedge (h \\vee h) \wedge (y)\wedge(-l \\vee -a)")
+        ent = input(r"entrez la formule (v \\vee g) \wedge (-q \\vee c)\n")
 
     valide, li_symbole, li_sommet_en_ordre = traitement_entree_utilisateur_SAT2(
         ent)
     while (not valide):
-        print("entrée non valide, un charactere par symbole")
-        print("le format d'entrée des formules est le LaTeX, exemple : (v \\vee g) \wedge (-q \\vee c) \wedge (h \\vee h) \wedge (y)\wedge(-l \\vee -a)")
-        ent = input("entrez la formule (v \\vee g) \wedge (-q \\vee c)\n")
+        print(r"entrée non valide, un charactere par symbole")
+        print(r"le format d'entrée des formules est le LaTeX, exemple : (v \\vee g) \wedge (-q \\vee c) \wedge (h \\vee h) \wedge (y)\wedge(-l \\vee -a)")
+        ent = input(r"entrez la formule (v \\vee g) \wedge (-q \\vee c)\n")
         valide, li_symbole, li_sommet_en_ordre = traitement_entree_utilisateur_SAT2(
             ent)
     # on transforme le codage en string par int
@@ -226,7 +226,7 @@ def resolvSAT2(ent):
 
 def resolvSAT3(ent):
     if (ent == ""):
-        print("le format d'entrée des formules est le LaTeX, exemple : (v \\vee g) \wedge (-q \\vee c \\vee g) \wedge (h \\vee h \\vee h) \wedge (y)\wedge(-l \\vee -a)")
+        print(r"le format d'entrée des formules est le LaTeX, exemple : (v \\vee g) \wedge (-q \\vee c \\vee g) \wedge (h \\vee h \\vee h) \wedge (y)\wedge(-l \\vee -a)")
         ent = input("entrez la formule\n")
 
     valide, li_symbole, triplet_en_ordre = traitement_entree_utilisateur_SAT3(
@@ -234,7 +234,7 @@ def resolvSAT3(ent):
     while (not valide):
         print("Erreur entrée non valide")
         ent = input(
-            "entrez la formule (v \\vee g) \wedge (-q \\vee c \\vee g) \wedge (h \\vee h \\vee h) \wedge (y)\wedge(-l \\vee -a)\n")
+            r"entrez la formule (v \\vee g) \wedge (-q \\vee c \\vee g) \wedge (h \\vee h \\vee h) \wedge (y)\wedge(-l \\vee -a)\n")
         valide, li_symbole, triplet_en_ordre = traitement_entree_utilisateur_SAT3(
             ent)
         print(li_symbole)
