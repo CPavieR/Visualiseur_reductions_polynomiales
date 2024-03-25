@@ -1,0 +1,1 @@
+(-x \vee g)  \wedge (o \vee -j)  \wedge (g \vee -c)  \wedge (j \vee c)  \wedge (o \vee -y)  \wedge (-o \vee -g)  \wedge (c \vee -j)  \wedge (-j \vee j)  \wedge (y \vee y)

@@ -1,0 +1,1 @@
+(-m \vee -o \vee s)  \wedge (m \vee l \vee -e)  \wedge (e \vee m \vee e)  \wedge (-l \vee -s \vee m)  \wedge (e \vee e \vee -r)
